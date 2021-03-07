@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>donate example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/donate/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="donate.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    
+    <main class="container">
+      <div class="donate-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Help us build the Jagannath temple!</h1>
+        <p class="lead">We will be immensely grateful for your contribution.</p>
+      </div>
+
+      <div class="row text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button id="btn-member" type="button" class="btn btn-lg btn-outline-primary">Become a member</button>
+          <button id="btn-one-off-donate" type="button" class="btn btn-lg btn-outline-primary">One off donation</button>
+          <button id="btn-volunteer" type="button" class="btn btn-lg btn-outline-primary">Volunteer</button>
+        </div>
+      </div>    
+      <br />
+
+      <div id="panel-member">
+        <div class="row"> 
+          <div class="col-md-12"> 
+            <p class="small">* To sign-up as a member you must at least be 21 years of age.</p>
+          </div>
+        </div>
+        <br /> 
+        <div class="row"> 
+          <div class="col-md-12"> 
+            <div class="row row-cols-1 row-cols-md-2 mb-4">
+              <div class="col">
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header text-center">
+                    <h4 class="my-0 fw-normal">Lifetime</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class=" text-center">
+                      <h1 class="card-title donate-card-title">£501</h1>
+                      <small class="text-muted">One off payment or £55 x 10 installments</small>
+                    </div>
+                    <ul class="list-unstyled mt-3 mb-4 list-group small">
+                      <li class="list-group-item">Can be nominated as trustee</li>
+                      <li class="list-group-item">Become part of working sub-committees</li>
+                      <li class="list-group-item">Receive all communications and newsletters</li>
+                      <li class="list-group-item">Can attend and contribute towards trust board meetings</li>
+                      <li class="list-group-item">Dedicated once yearly puja for family on a selected date of your choice</li>
+                      <li class="list-group-item">Receive annual calendar and other publications</li>
+                    </ul>
+                    <a class="w-100 btn btn-primary" href="checkout/checkout.html">Sign up</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header text-center">
+                    <h4 class="my-0 fw-normal">Associate</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class=" text-center">
+                      <h1 class="card-title donate-card-title">£11 / mo</h1>              
+                      <small class="text-muted">One off payment or £55 x 10 installments</small>
+                    </div>
+                    
+                    <ul class="list-unstyled mt-3 mb-4 small">
+                      <li class="list-group-item">Can become part of working sub-committees</li>
+                      <li class="list-group-item">Receive all communications and newsletters</li>
+                      <li class="list-group-item">One dedicated puja for family</li>
+                      <li class="list-group-item">Receive annual calendar and other publications</li>
+                    </ul>
+                    <a class="w-100 btn btn-outline-primary" href="checkout/checkout.html">Sign up</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>  
+          </div>
+
+        </div>
+      </div>   
+
+      <div id="panel-one-off-donate">
+        <div class="row text-center">
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button id="btn-donate-25" type="button" class="btn btn-outline-primary">£25</button>
+                <button id="btn-donate-50" type="button" class="btn btn-outline-primary active">£50</button>
+                <button id="btn-donate-100" type="button" class="btn btn-outline-primary">£100</button>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-3">
+          </div>                    
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-3">            
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">£</div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Other amount">
+            </div>
+          </div>
+          <div class="col-md-1">            
+            <a class="btn btn-primary" href="checkout/checkout.html">Go</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>   
+
+      <div id="panel-volunteer">
+        <div class="row">
+          <p><i>Come, be part of the journey.</i></p>
+            
+          <p>
+            We have lots of work to do and extra hands are always welcome! 
+            The team is fantastic and you'll have a chance to contribute to this divine cause.
+          </p>
+
+          <p>Just sign-up and we'll be in touch with you.</p>
+          
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <a class="btn btn-primary" href="checkout/checkout.html">Sign up</a>
+          </div>
+        </div>
+      </div>  
+                
+    </main>    
+  </body>  
+  <script type="text/javascript" src="donate.js"></script>
+</html>
