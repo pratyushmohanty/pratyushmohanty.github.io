@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#panel-volunteer").hide();   
     $("#panel-member").show();
     set_btn_active("btn-member");
+    set_btn_active("btn-donate-50");
     
     $("#btn-member").on("click", function(){
         $("#panel-one-off-donate").hide();
@@ -33,6 +34,25 @@ $(document).ready(function () {
         set_btn_active("btn-volunteer");
     });
     
+    /* Donation Buttons */
+    $("#btn-donate-25").on("click", function(){
+        
+        set_btn_inactive("btn-donate-50");        
+        set_btn_inactive("btn-donate-100");
+        set_btn_active("btn-donate-25");
+    });
+    $("#btn-donate-50").on("click", function(){
+        
+        set_btn_inactive("btn-donate-25");        
+        set_btn_inactive("btn-donate-100");
+        set_btn_active("btn-donate-50");
+    });
+    $("#btn-donate-100").on("click", function(){
+        
+        set_btn_inactive("btn-donate-25");        
+        set_btn_inactive("btn-donate-50");
+        set_btn_active("btn-donate-100");
+    });
 
   }); 
 

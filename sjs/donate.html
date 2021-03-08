@@ -49,8 +49,8 @@
       <div class="row text-center">
         <div class="btn-group" role="group" aria-label="Basic example">
           <button id="btn-member" type="button" class="btn btn-lg btn-outline-primary">Become a member</button>
-          <button id="btn-one-off-donate" type="button" class="btn btn-lg btn-outline-primary">One off donation</button>
-          <button id="btn-volunteer" type="button" class="btn btn-lg btn-outline-primary">Volunteer</button>
+          <button id="btn-one-off-donate" type="button" class="btn btn-lg btn-outline-primary">Donate</button>
+          <button id="btn-volunteer" type="button" class="btn btn-lg btn-outline-primary">Support Us</button>
         </div>
       </div>    
       <br />
@@ -116,13 +116,20 @@
 
       <div id="panel-one-off-donate">
         <div class="row text-center">
+          <div class="col-md-12"> 
+            <p><i>Any donation that you make, goes a long way towards the cause.</i></p>            
+            <p><i>We are ever grateful to you for your generosity.</i></p>
+
+          </div>
+        </div>
+        <div class="row text-center">
           <div class="col-md-3">
           </div>
           <div class="col-md-6">
             <div class="row">
               <div class="btn-group" role="group" aria-label="Basic example">
                 <button id="btn-donate-25" type="button" class="btn btn-outline-primary">£25</button>
-                <button id="btn-donate-50" type="button" class="btn btn-outline-primary active">£50</button>
+                <button id="btn-donate-50" type="button" class="btn btn-outline-primary">£50</button>
                 <button id="btn-donate-100" type="button" class="btn btn-outline-primary">£100</button>
               </div>
             </div>  
@@ -139,7 +146,7 @@
               <div class="input-group-prepend">
                 <div class="input-group-text">£</div>
               </div>
-              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Other amount">
+              <input type="number" min="1" max="1000" class="form-control" id="inlineFormInputGroup" placeholder="Other amount">
             </div>
           </div>
           <div class="col-md-1">            
@@ -152,16 +159,43 @@
 
       <div id="panel-volunteer">
         <div class="row">
-          <p><i>Come, be part of the journey.</i></p>
-            
-          <p>
-            We have lots of work to do and extra hands are always welcome! 
-            The team is fantastic and you'll have a chance to contribute to this divine cause.
-          </p>
+          <div class="col-md-12"> 
+            <p><i>Come, be part of the journey.</i></p>
+                        
+            <p>
+              We have lots of work to do and extra hands are always welcome!           
+              The team is fantastic and you'll have a chance to contribute to this divine cause.
+            </p>
 
-          <p>Just sign-up and we'll be in touch with you.</p>
-          
+            <p>Just sign-up and we'll be in touch with you.</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12"> 
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="check-volunteer">
+              <label class="form-check-label" for="check-volunteer">              
+                <p>I am happy to volunteer.</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-md-12"> 
+            <p><i>Interested, but cannot commit to time!</i></p>
+
+            <p>Don't worry! We understand busy schedules and appreciate that.
+            </p>
+            <p>
+            You can still sign up, but <i>do not check</i> the box above. 
+            </p>          
+            <p>
+            We'll still be delighted to add you to our growing community and you can subscribe to our newsletters and notifications.          
+            </p>
+          </div>
+        </div>
+        
         <div class="row">
           <div class="col-md-3">
             <a class="btn btn-primary" href="checkout/checkout.html">Sign up</a>
@@ -173,3 +207,4 @@
   </body>  
   <script type="text/javascript" src="donate.js"></script>
 </html>
+
